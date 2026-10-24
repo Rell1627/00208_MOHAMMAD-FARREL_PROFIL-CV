@@ -4,7 +4,7 @@
    Nama      : MOHAMMAD FARREL
    ========================================================= */
 
-/* 1. TEMA DEFAULT (LIGHT MODE) */
+/* 1. DESIGN TOKENS (LIGHT MODE DEFAULT) */
 :root {
   --primary-color: #0284c7;
   --secondary-color: #2563eb;
@@ -14,14 +14,15 @@
   --border-card: #e2e8f0;
   --text-main: #0f172a;
   --text-muted: #64748b;
-  --badge-bg: #e0f2fe;
-  --badge-text: #0369a1;
+  --badge-bg: rgba(34, 197, 94, 0.1);
+  --badge-border: rgba(34, 197, 94, 0.3);
+  --badge-text: #16a34a;
   --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --radius-card: 20px;
   --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
 }
 
-/* 2. FITUR TEMA GELAP (AKSES LEWAT class="tema-gelap" DI <body>) */
+/* 2. TEMA GELAP (AKSES LEWAT class="tema-gelap" DI <body>) */
 body.tema-gelap {
   --primary-color: #38bdf8;
   --secondary-color: #3b82f6;
@@ -31,8 +32,9 @@ body.tema-gelap {
   --border-card: rgba(255, 255, 255, 0.08);
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --badge-bg: rgba(56, 189, 248, 0.15);
-  --badge-text: #38bdf8;
+  --badge-bg: rgba(34, 197, 94, 0.15);
+  --badge-border: rgba(34, 197, 94, 0.3);
+  --badge-text: #4ade80;
   --shadow-card: 0 15px 35px -10px rgba(0, 0, 0, 0.5);
 }
 
@@ -83,10 +85,6 @@ header {
   gap: 20px;
 }
 
-.avatar-wrapper {
-  position: relative;
-}
-
 .avatar {
   width: 130px;
   height: 130px;
@@ -96,17 +94,11 @@ header {
   box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
 }
 
-.status-badge {
-  position: absolute;
-  bottom: 0;
-  right: -10px;
-  background: var(--badge-bg);
-  color: var(--badge-text);
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 20px;
-  border: 1px solid var(--primary-color);
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 header h1 {
@@ -124,7 +116,29 @@ header h1 {
 .campus {
   color: var(--text-muted);
   font-size: 0.85rem;
-  margin-top: 4px;
+}
+
+/* BADGE STATUS BARU DENGAN GLOWING DOT */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  color: var(--badge-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #22c55e;
 }
 
 /* 5. NAVIGASI STICKY BUBBLE */
@@ -239,7 +253,7 @@ table td {
 }
 
 .skill-card {
-  background: var(--badge-bg);
+  background: rgba(56, 189, 248, 0.08);
   border: 1px solid var(--border-card);
   color: var(--primary-color);
   padding: 14px;
@@ -297,7 +311,7 @@ footer {
   margin-top: 25px;
 }
 
-/* 10. MEDIA QUERY LAPTOP / TABLET (≥768px) */
+/* 10. MEDIA QUERY UNTUK LAYAR LAPTOP / TABLET (≥768px) */
 @media (min-width: 768px) {
   body {
     padding: 40px 20px;
@@ -308,6 +322,10 @@ footer {
     text-align: left;
     padding: 40px;
     gap: 30px;
+  }
+
+  .header-info {
+    align-items: flex-start;
   }
 
   header h1 {
