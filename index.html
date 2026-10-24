@@ -3,177 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Akademik &amp; Profil - MOHAMMAD FARREL</title>
+  <title>Portofolio Executive - MOHAMMAD FARREL</title>
 
-  <!-- MENGHUBUNGKAN DENGAN FOLDER css/style.css  -->
+  <!-- MENGHUBUNGKAN CSS DALAM FOLDER css/style.css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<!-- Tambahkan class "tema-gelap" untuk mengaktifkan Dark Mode bawaan -->
+<body class="tema-gelap">
 
-  <!-- TABEL UTAMA UNTUK TATA LETAK 2 KOLOM (SIDEBAR + KONTEN UTAMA) -->
-  <table width="100%" border="0" cellpadding="15" cellspacing="0">
-    <tr valign="top">
+  <div class="container">
 
-      <!-- ================= SIDEBAR KIRI ================= -->
-      <td width="30%" bgcolor="#F1F5F9">
-        
-        <!-- HEADER / PROFIL UTAMA -->
-        <header align="center">
-          <img src="images/foto-profil.jpg" alt="Foto Profil MOHAMMAD FARREL" width="160">
-          <h1>MOHAMMAD FARREL</h1>
-          <p><b>S1 Sistem Informasi</b></p>
-          <p><i>Universitas Dian Nuswantoro Kota Kediri</i></p>
-        </header>
+    <!-- HEADER / HERO SECTION -->
+    <header>
+      <div class="avatar-wrapper">
+        <img src="images/foto-profil.jpg" alt="Foto Profil MOHAMMAD FARREL" class="avatar">
+        <span class="status-badge">Available for Work</span>
+      </div>
+      <div class="header-info">
+        <h1>MOHAMMAD FARREL</h1>
+        <p class="role">Software Engineering Enthusiast | Web Developer</p>
+        <p class="campus">🎓 S1 Sistem Informasi — Universitas Dian Nuswantoro Kediri</p>
+      </div>
+    </header>
 
-        <hr size="2" color="#CBD5E1">
+    <!-- NAVIGASI MELAYANG (STICKY BUBBLE) -->
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
 
-        <!-- NAVIGASI SAMPING (SIDE NAV) -->
-        <nav>
-          <h3><b>📌 NAVIGASI Cepat</b></h3>
-          <ul>
-            <li><a href="#tentang">Ringkasan Profil</a></li>
-            <li><a href="#keahlian">Kompetensi Utama</a></li>
-            <li><a href="#organisasi">Pengalaman Kepemimpinan</a></li>
-            <li><a href="#pendidikan">Riwayat Pendidikan</a></li>
-            <li><a href="#kontak">Hubungi Saya</a></li>
-          </ul>
-        </nav>
+    <!-- KONTEN UTAMA -->
+    <main>
 
-        <hr size="2" color="#CBD5E1">
+      <!-- SECTION 1: TENTANG SAYA -->
+      <section id="tentang">
+        <h2>📌 Ringkasan Profil</h2>
+        <blockquote>
+          "Halo! Saya Mohammad Farrel, mahasiswa S1 Sistem Informasi di Universitas Dian Nuswantoro. Berfokus pada pengembangan software, saya berkomitmen untuk mengasah keahlian teknis dan logika pemrograman guna menciptakan solusi digital yang efisien, terstruktur, dan bermanfaat."
+        </blockquote>
+      </section>
 
-        <!-- KONTEN SAMPING / KONTAK -->
-        <aside id="kontak">
-          <h3><b>📬 Informasi Kontak</b></h3>
-          <p><b>Email Resmi:</b><br>
-          <a href="mailto:platinaparel@gmail.com">platinaparel@gmail.com</a></p>
-
-          <p><b>Jaringan Profesional:</b><br>
-          💼 <a href="https://www.linkedin.com/in/mohammad-farrel-9b29a3389" target="_blank">LinkedIn Profile</a><br>
-          📸 <a href="https://www.instagram.com/mhfrell_?rpxt=M2dxdXd0YmV6ZTVm" target="_blank">Instagram (@mhfrell_)</a></p>
-        </aside>
-
-      </td>
-
-      <!-- ================= KONTEN UTAMA KANAN ================= -->
-      <td width="70%">
-
-        <main>
-
-          <!-- SECTION 1: TENTANG SAYA -->
-          <section id="tentang">
-            <h2>📜 Ringkasan Profil</h2>
-            <p>
-              Saya adalah mahasiswa S1 Sistem Informasi di Universitas Dian Nuswantoro Kediri yang berfokus pada pengembangan perangkat lunak, perencanaan strategis, dan manajemen organisasi. Berkomitmen tinggi untuk mengasah logika pemrograman serta keahlian manajerial guna menciptakan solusi teknologi yang efisien dan berdampak positif.
-            </p>
-          </section>
-
-          <br>
-
-          <!-- SECTION 2: KEAHLIAN (LAYOUT DUA KOLOM SKS) -->
-          <section id="keahlian">
-            <h2>⚡ Kompetensi &amp; Keahlian Utama</h2>
-            <table width="100%" border="1" cellpadding="10" cellspacing="0">
-              <tr bgcolor="#E2E8F0">
-                <th width="50%">Soft Skills &amp; Kepemimpinan</th>
-                <th width="50%">Keahlian Teknis &amp; Manajerial</th>
+      <!-- SECTION 2: PENDIDIKAN -->
+      <section id="pendidikan">
+        <h2>🎓 Riwayat Pendidikan</h2>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Jenjang</th>
+                <th>Instansi / Universitas</th>
+                <th>Periode</th>
               </tr>
-              <tr valign="top">
-                <td>
-                  <ul>
-                    <li>Strategic Business Planning</li>
-                    <li>Data-Driven Decision Making</li>
-                    <li>Agile &amp; Scrum Methodology</li>
-                    <li>Creation of Work Output</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Financial Planning &amp; Budgeting</li>
-                    <li>Desain Visual (Canva, Adobe, dll)</li>
-                    <li>HTML5 Semantik &amp; Web Dasar</li>
-                    <li>Manajemen Hubungan Antar Lembaga</li>
-                  </ul>
-                </td>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>S1 Sistem Informasi</strong></td>
+                <td>Universitas Dian Nuswantoro Kota Kediri</td>
+                <td>2025 - Sekarang</td>
               </tr>
-            </table>
-          </section>
+              <tr>
+                <td><strong>SMA</strong></td>
+                <td>SMAN 2 Kota Kediri</td>
+                <td>2023 - 2025</td>
+              </tr>
+              <tr>
+                <td><strong>SMP</strong></td>
+                <td>SMPN 1 Kota Kediri</td>
+                <td>2021 - 2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-          <br>
+      <!-- SECTION 3: KEAHLIAN (RESPONSIVE GRID) -->
+      <section id="keahlian">
+        <h2>⚡ Keahlian &amp; Kompetensi</h2>
+        <div class="skill-grid">
+          <div class="skill-card">Desain Canva &amp; Adobe</div>
+          <div class="skill-card">Creation of Work Output</div>
+          <div class="skill-card">Financial Planning &amp; Budgeting</div>
+          <div class="skill-card">Strategic Business Planning</div>
+          <div class="skill-card">Data-Driven Decision Making</div>
+          <div class="skill-card">Agile &amp; Scrum Methodology</div>
+        </div>
+      </section>
 
-          <!-- SECTION 3: ORGANISASI & KEPEMIMPINAN -->
-          <section id="organisasi">
-            <h2>🏛️ Rekam Jejak Kepemimpinan &amp; Organisasi</h2>
-            <ol>
-              <li>
-                <b>Ketua</b> - <i>Badan Amalan Islam</i> (2025 - Sekarang)
-                <p>Memimpin arah kebijakan dan program kerja utama organisasi di tingkat kampus.</p>
-              </li>
-              <li>
-                <b>Koordinator Departemen Hubungan Antar Lembaga</b> - <i>Badan Keluarga Mahasiswa</i> (2026 - Sekarang)
-                <p>Mengelola diplomasi, kemitraan strategis, dan komunikasi eksternal antar organisasi.</p>
-              </li>
-              <li>
-                <b>Kepala Divisi Event</b> - <i>KAMADIKSI</i> (2026 - Sekarang)
-                <p>Bertanggung jawab atas perencanaan dan eksekusi berbagai agenda kegiatan besar mahasiswa.</p>
-              </li>
-              <li>
-                <b>Anggota Divisi Humas</b> - <i>Biro Sistem Informasi UDINUS</i> (2025 - Sekarang)
-                <p>Mengelola pilar informasi dan publikasi unit kegiatan sistem informasi.</p>
-              </li>
-            </ol>
-          </section>
+      <!-- SECTION 4: ORGANISASI -->
+      <section id="organisasi">
+        <h2>🏛️ Pengalaman Kepemimpinan &amp; Organisasi</h2>
+        <ul class="info-list">
+          <li><strong>Badan Amalan Islam:</strong> Ketua (2025 - Sekarang)</li>
+          <li><strong>Badan Keluarga Mahasiswa:</strong> Koordinator Dept. Hubungan Antar Lembaga (2026 - Sekarang)</li>
+          <li><strong>KAMADIKSI:</strong> Kepala Divisi Event (2026 - Sekarang)</li>
+          <li><strong>Anggota Biro Sistem Informasi UDINUS:</strong> Divisi Humas (2025 - Sekarang)</li>
+        </ul>
+      </section>
 
-          <br>
+      <!-- SECTION 5: KONTAK -->
+      <section id="kontak">
+        <h2>📬 Hubungi Saya</h2>
+        <div class="contact-grid">
+          <a href="mailto:platinaparel@gmail.com" class="contact-card">
+            <span class="icon">📧</span>
+            <span>Email Resmi</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mohammad-farrel-9b29a3389" target="_blank" class="contact-card">
+            <span class="icon">💼</span>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://www.instagram.com/mhfrell_?rpxt=M2dxdXd0YmV6ZTVm" target="_blank" class="contact-card">
+            <span class="icon">📸</span>
+            <span>Instagram (@mhfrell_)</span>
+          </a>
+        </div>
+      </section>
 
-          <!-- SECTION 4: PENDIDIKAN -->
-          <section id="pendidikan">
-            <h2>🎓 Latar Belakang Pendidikan</h2>
-            <table width="100%" border="1" cellpadding="8" cellspacing="0">
-              <thead>
-                <tr bgcolor="#E2E8F0">
-                  <th>Tingkat</th>
-                  <th>Nama Institusi</th>
-                  <th>Lokasi</th>
-                  <th>Tahun</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><b>S1 Sistem Informasi</b></td>
-                  <td>Universitas Dian Nuswantoro</td>
-                  <td>Kota Kediri</td>
-                  <td>2025 - Sekarang</td>
-                </tr>
-                <tr>
-                  <td><b>SMA</b></td>
-                  <td>SMAN 2 Kota Kediri</td>
-                  <td>Kota Kediri</td>
-                  <td>2023 - 2025</td>
-                </tr>
-                <tr>
-                  <td><b>SMP</b></td>
-                  <td>SMPN 1 Kota Kediri</td>
-                  <td>Kota Kediri</td>
-                  <td>2021 - 2023</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+    </main>
 
-        </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 MOHAMMAD FARREL. Dibuat dengan CSS Variables &amp; Layout Modern.</p>
+    </footer>
 
-        <br><br>
-
-        <!-- FOOTER -->
-        <footer align="center">
-          <hr>
-          <p><small>&copy; 2026 MOHAMMAD FARREL. Tugas 1 Pemrograman Web - HTML Semantik.</small></p>
-        </footer>
-
-      </td>
-
-    </tr>
-  </table>
+  </div>
 
 </body>
 </html>
