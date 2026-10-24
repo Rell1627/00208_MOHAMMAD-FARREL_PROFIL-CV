@@ -16,4 +16,4 @@ Halaman web profil pribadi yang dibangun menggunakan HTML5 Semantik tanpa menggu
 - **Header & Navigasi:** Foto profil, identitas ringkas, dan menu navigasi.
 - **Tentang Saya & Pendidikan:** Profil singkat dan riwayat pendidikan.
 - **Keahlian & Organisasi:** Daftar keahlian serta pengalaman organisasi.
-- **Kontak & Footer:** Informasi kontak dan copyright.
+- **Kontak & Footer:** Informasi kontak.
