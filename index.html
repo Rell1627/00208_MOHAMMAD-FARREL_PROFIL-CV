@@ -4,84 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Saya - MOHAMMAD FARREL</title>
+  
+  <!-- CSS: Menjadikan Tampilan Mewah & Modern -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #f4f6f9;
+      padding: 20px;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    header {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+    header img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border: 4px solid #0070f3;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      color: #111827;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+    header p {
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+    nav {
+      background: #0070f3;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px rgba(0, 112, 243, 0.2);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    section {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+    section h2 {
+      color: #0070f3;
+      font-size: 1.3rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    blockquote {
+      background: #f8fafc;
+      border-left: 4px solid #0070f3;
+      padding: 12px 18px;
+      font-style: italic;
+      color: #475569;
+      border-radius: 0 6px 6px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table th, table td {
+      border: 1px solid #e5e7eb;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    table th {
+      background-color: #f9fafb;
+      color: #374151;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #0070f3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #9ca3af;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- HEADER: Identitas Utama & Foto -->
-  <header>
-    <img src="images/foto-profil.jpg" alt="Foto Profil MOHAMMAD FARREL" width="150">
-    <h1>MOHAMMAD FARREL</h1>
-    <p>Mahasiswa Pemrograman Web | Software Engineering Enthusiast</p>
-  </header>
+  <div class="container">
 
-  <!-- NAVIGASI: Menu Tautan Lokal -->
-  <nav>
-    <ul>
-      <li><a href="#tentang">Tentang Saya</a></li>
-      <li><a href="#pendidikan">Pendidikan</a></li>
-      <li><a href="#keahlian">Keahlian</a></li>
-      <li><a href="#organisasi">Organisasi</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-  </nav>
+    <!-- HEADER -->
+    <header>
+      <img src="images/foto-profil.jpg" alt="Foto Profil MOHAMMAD FARREL">
+      <h1>MOHAMMAD FARREL</h1>
+      <p>Mahasiswa Pemrograman Web | Software Engineering Enthusiast</p>
+    </header>
 
-  <!-- MAIN: Konten Utama Website -->
-  <main>
-
-    <!-- Section 1: Tentang Saya -->
-    <section id="tentang">
-      <h2>Tentang Saya</h2>
-      <p>Halo! Saya Mohammad Farrel, mahasiswa yang berfokus pada pengembangan aplikasi web. Saya tertarik mempelajari teknologi frontend dan backend untuk membangun solusi digital yang bermanfaat.</p>
-    </section>
-
-    <!-- Section 2: Pendidikan -->
-    <section id="pendidikan">
-      <h2>Pendidikan</h2>
+    <!-- NAVIGASI -->
+    <nav>
       <ul>
-        <li>
-          <strong>S1 Teknik Informatika / Sistem Informasi</strong> - Nama Universitas Kamu (2024 - Sekarang)
-        </li>
-        <li>
-          <strong>SMA / SMK</strong> - Nama Sekolah Asal Kamu (2021 - 2024)
-        </li>
+        <li><a href="#tentang">Tentang Saya</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <!-- Section 3: Keahlian -->
-    <section id="keahlian">
-      <h2>Keahlian</h2>
-      <ul>
-        <li>HTML5 &amp; CSS3</li>
-        <li>Dasar Pemrograman JavaScript</li>
-        <li>Version Control (Git &amp; GitHub)</li>
-      </ul>
-    </section>
+    <!-- MAIN -->
+    <main>
 
-    <!-- Section 4: Organisasi (Opsional) -->
-    <section id="organisasi">
-      <h2>Pengalaman Organisasi</h2>
-      <ul>
-        <li><strong>Anggota Himpunan / UKM</strong> - Jabatan atau peran kamu (2024)</li>
-      </ul>
-    </section>
+      <!-- Section 1: Tentang Saya -->
+      <section id="tentang">
+        <h2>📌 Tentang Saya</h2>
+        <blockquote>
+          "Halo! Saya Mohammad Farrel, mahasiswa yang berfokus pada pengembangan aplikasi web. Saya tertarik mempelajari teknologi frontend dan backend untuk membangun solusi digital yang bermanfaat."
+        </blockquote>
+      </section>
 
-    <!-- Section 5: Kontak -->
-    <section id="kontak">
-      <h2>Kontak</h2>
-      <p>Silakan hubungi saya melalui:</p>
-      <ul>
-        <li>Email: <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/re111627" target="_blank">re111627</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/usernamekamu" target="_blank">Profil LinkedIn</a></li>
-      </ul>
-    </section>
+      <!-- Section 2: Pendidikan -->
+      <section id="pendidikan">
+        <h2>🎓 Pendidikan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tingkat</th>
+              <th>Instansi / Sekolah</th>
+              <th>Tahun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>S1 Teknik Informatika</td>
+              <td>Nama Universitas Kamu</td>
+              <td>2024 - Sekarang</td>
+            </tr>
+            <tr>
+              <td>SMA / SMK</td>
+              <td>Nama Sekolah Asal Kamu</td>
+              <td>2021 - 2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-  </main>
+      <!-- Section 3: Keahlian -->
+      <section id="keahlian">
+        <h2>⚡ Keahlian</h2>
+        <ul>
+          <li><b>HTML5 &amp; CSS3</b> - Structure &amp; Styling</li>
+          <li><b>JavaScript</b> - Fundamental &amp; Logic</li>
+          <li><b>Git &amp; GitHub</b> - Version Control System</li>
+        </ul>
+      </section>
 
-  <!-- FOOTER: Copyright -->
-  <footer>
-    <p>&copy; 2026 MOHAMMAD FARREL. All rights reserved.</p>
-  </footer>
+      <!-- Section 4: Organisasi -->
+      <section id="organisasi">
+        <h2>🏛️ Pengalaman Organisasi</h2>
+        <ul>
+          <li><b>Anggota Himpunan / UKM</b> - Divisi Pengembangan Komunitas (2024 - Sekarang)</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Kontak -->
+      <section id="kontak">
+        <h2>📬 Kontak &amp; Media Sosial</h2>
+        <ul>
+          <li>📧 Email: <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
+          <li>🌐 GitHub: <a href="https://github.com/re111627" target="_blank">re111627</a></li>
+          <li>💼 LinkedIn: <a href="https://linkedin.com/in/usernamekamu" target="_blank">Profil LinkedIn</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 MOHAMMAD FARREL. Dibuat untuk Tugas 1 Pemrograman Web.</p>
+    </footer>
+
+  </div>
 
 </body>
 </html>
