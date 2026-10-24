@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Tailwind CSS - MOHAMMAD FARREL</title>
+
+  <!-- PASANG TAILWIND CSS LEWAT CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- KONFIGURASI TEMA GELAP UTAMA (CYBER DARK) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              main: '#38bdf8',
+              accent: '#3b82f6',
+              dark: '#0f172a',
+              card: 'rgba(30, 41, 59, 0.75)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-6 px-4 md:py-10">
+
+  <!-- KONTAINER UTAMA -->
+  <div class="max-w-3xl mx-auto space-y-6">
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl flex flex-col md:flex-row items-center text-center md:text-left gap-6 transition hover:border-sky-500/50">
+      <div class="relative">
+        <img src="images/foto-profil.jpg" alt="Foto Profil MOHAMMAD FARREL" class="w-32 h-32 rounded-full object-cover border-4 border-sky-400 shadow-lg shadow-sky-500/20">
+      </div>
+      <div class="space-y-2">
+        <h1 class="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-white via-sky-200 to-sky-400 bg-clip-text text-transparent">
+          MOHAMMAD FARREL
+        </h1>
+        <p class="text-sky-400 font-semibold text-sm md:text-base">
+          Software Engineering Enthusiast | Web Developer
+        </p>
+        <p class="text-slate-400 text-xs md:text-sm">
+          🎓 S1 Sistem Informasi — Universitas Dian Nuswantoro Kediri
+        </p>
+        
+        <!-- STATUS BADGE -->
+        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full mt-2">
+          <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_8px_#22c55e]"></span>
+          <span>Available for Work</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGASI MELAYANG (STICKY) -->
+    <nav class="sticky top-4 z-50 bg-slate-900/90 backdrop-blur-md border border-slate-800 rounded-full p-2 shadow-lg">
+      <ul class="flex flex-wrap justify-center gap-1 md:gap-2">
+        <li><a href="#tentang" class="text-xs md:text-sm font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full text-slate-300 hover:bg-sky-500 hover:text-white transition">Tentang</a></li>
+        <li><a href="#pendidikan" class="text-xs md:text-sm font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full text-slate-300 hover:bg-sky-500 hover:text-white transition">Pendidikan</a></li>
+        <li><a href="#keahlian" class="text-xs md:text-sm font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full text-slate-300 hover:bg-sky-500 hover:text-white transition">Keahlian</a></li>
+        <li><a href="#organisasi" class="text-xs md:text-sm font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full text-slate-300 hover:bg-sky-500 hover:text-white transition">Organisasi</a></li>
+        <li><a href="#kontak" class="text-xs md:text-sm font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-full text-slate-300 hover:bg-sky-500 hover:text-white transition">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="space-y-6">
+
+      <!-- SECTION 1: TENTANG SAYA -->
+      <section id="tentang" class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl transition hover:border-sky-500/30">
+        <h2 class="text-lg md:text-xl font-bold text-sky-400 border-b border-slate-800 pb-3 mb-4 flex items-center gap-2">
+          📌 Ringkasan Profil
+        </h2>
+        <blockquote class="bg-slate-950/60 border-l-4 border-sky-400 p-4 rounded-r-xl italic text-slate-300 text-sm md:text-base">
+          "Halo! Saya Mohammad Farrel, mahasiswa S1 Sistem Informasi di Universitas Dian Nuswantoro. Berfokus pada pengembangan software, saya berkomitmen untuk mengasah keahlian teknis dan logika pemrograman guna menciptakan solusi digital yang efisien, terstruktur, dan bermanfaat."
+        </blockquote>
+      </section>
+
+      <!-- SECTION 2: PENDIDIKAN -->
+      <section id="pendidikan" class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl transition hover:border-sky-500/30">
+        <h2 class="text-lg md:text-xl font-bold text-sky-400 border-b border-slate-800 pb-3 mb-4 flex items-center gap-2">
+          🎓 Riwayat Pendidikan
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm rounded-xl overflow-hidden border border-slate-800">
+            <thead class="bg-slate-950/80 text-sky-400 font-semibold border-b border-slate-800">
+              <tr>
+                <th class="p-3">Jenjang</th>
+                <th class="p-3">Instansi / Universitas</th>
+                <th class="p-3">Periode</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+              <tr class="hover:bg-slate-800/40 transition">
+                <td class="p-3 font-semibold text-slate-100">S1 Sistem Informasi</td>
+                <td class="p-3">Universitas Dian Nuswantoro Kota Kediri</td>
+                <td class="p-3">2025 - Sekarang</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40 transition">
+                <td class="p-3 font-semibold text-slate-100">SMA</td>
+                <td class="p-3">SMAN 2 Kota Kediri</td>
+                <td class="p-3">2023 - 2025</td>
+              </tr>
+              <tr class="hover:bg-slate-800/40 transition">
+                <td class="p-3 font-semibold text-slate-100">SMP</td>
+                <td class="p-3">SMPN 1 Kota Kediri</td>
+                <td class="p-3">2021 - 2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 3: KEAHLIAN (RESPONSIVE GRID) -->
+      <section id="keahlian" class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl transition hover:border-sky-500/30">
+        <h2 class="text-lg md:text-xl font-bold text-sky-400 border-b border-slate-800 pb-3 mb-4 flex items-center gap-2">
+          ⚡ Keahlian &amp; Kompetensi
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+          <div class="bg-sky-500/10 border border-sky-500/20 text-sky-300 p-3 rounded-xl font-semibold text-xs md:text-sm text-center">Desain Canva &amp; Adobe</div>
+          <div class="bg-sky-500/10 border border-sky-500/20 text-sky-300 p-3 rounded-xl font-semibold text-xs md:text-sm text-center">Creation of Work Output</div>
+          <div class="bg-sky-500/10 border border-sky-500/20 text-sky-300 p-3 rounded-xl font-semibold text-xs md:text-sm text-center">Financial Planning &amp; Budgeting</div>
+          <div class="bg-sky-500/10 border border-sky-500/20 text-sky-300 p-3 rounded-xl font-semibold text-xs md:text-sm text-center">Strategic Business Planning</div>
+          <div class="bg-sky-500/10 border border-sky-500/20 text-sky-300 p-3 rounded-xl font-semibold text-xs md:text-sm text-center">Data-Driven Decision Making</div>
+          <div class="bg-sky-500/10 border border-sky-500/20 text-sky-300 p-3 rounded-xl font-semibold text-xs md:text-sm text-center">Agile &amp; Scrum Methodology</div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: ORGANISASI -->
+      <section id="organisasi" class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl transition hover:border-sky-500/30">
+        <h2 class="text-lg md:text-xl font-bold text-sky-400 border-b border-slate-800 pb-3 mb-4 flex items-center gap-2">
+          🏛️ Pengalaman Kepemimpinan &amp; Organisasi
+        </h2>
+        <ul class="space-y-3 text-slate-300 text-sm md:text-base">
+          <li class="flex items-start gap-2"><span class="text-sky-400">•</span><span><strong class="text-slate-100">Badan Amalan Islam:</strong> Ketua (2025 - Sekarang)</span></li>
+          <li class="flex items-start gap-2"><span class="text-sky-400">•</span><span><strong class="text-slate-100">Badan Keluarga Mahasiswa:</strong> Koordinator Dept. Hubungan Antar Lembaga (2026 - Sekarang)</span></li>
+          <li class="flex items-start gap-2"><span class="text-sky-400">•</span><span><strong class="text-slate-100">KAMADIKSI:</strong> Kepala Divisi Event (2026 - Sekarang)</span></li>
+          <li class="flex items-start gap-2"><span class="text-sky-400">•</span><span><strong class="text-slate-100">Anggota Biro Sistem Informasi UDINUS:</strong> Divisi Humas (2025 - Sekarang)</span></li>
+        </ul>
+      </section>
+
+      <!-- SECTION 5: KONTAK -->
+      <section id="kontak" class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl transition hover:border-sky-500/30">
+        <h2 class="text-lg md:text-xl font-bold text-sky-400 border-b border-slate-800 pb-3 mb-4 flex items-center gap-2">
+          📬 Hubungi Saya
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="mailto:platinaparel@gmail.com" class="flex items-center justify-center gap-2 bg-slate-950/60 border border-slate-800 p-3 rounded-xl text-slate-200 text-xs md:text-sm font-medium hover:border-sky-400 hover:text-sky-400 transition hover:-translate-y-0.5">
+            <span>📧</span> Email
+          </a>
+          <a href="https://www.linkedin.com/in/mohammad-farrel-9b29a3389" target="_blank" class="flex items-center justify-center gap-2 bg-slate-950/60 border border-slate-800 p-3 rounded-xl text-slate-200 text-xs md:text-sm font-medium hover:border-sky-400 hover:text-sky-400 transition hover:-translate-y-0.5">
+            <span>💼</span> LinkedIn
+          </a>
+          <a href="https://www.instagram.com/mhfrell_?rpxt=M2dxdXd0YmV6ZTVm" target="_blank" class="flex items-center justify-center gap-2 bg-slate-950/60 border border-slate-800 p-3 rounded-xl text-slate-200 text-xs md:text-sm font-medium hover:border-sky-400 hover:text-sky-400 transition hover:-translate-y-0.5">
+            <span>📸</span> Instagram
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 text-slate-500 text-xs border-t border-slate-800">
+      <p>&copy; 2026 MOHAMMAD FARREL. Tugas 2 — Tailwind CSS Framework.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
