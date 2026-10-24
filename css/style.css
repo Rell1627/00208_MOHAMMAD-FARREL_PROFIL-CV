@@ -1,10 +1,4 @@
-/* =========================================================
-   PORTOFOLIO EXECUTIVE - CSS VARIABLES & RESPONSIVE LAYOUT
-   File Path : css/style.css
-   Nama      : MOHAMMAD FARREL
-   ========================================================= */
 
-/* 1. DESIGN TOKENS (LIGHT MODE DEFAULT) */
 :root {
   --primary-color: #0284c7;
   --secondary-color: #2563eb;
@@ -22,7 +16,6 @@
   --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
 }
 
-/* 2. TEMA GELAP (AKSES LEWAT class="tema-gelap" DI <body>) */
 body.tema-gelap {
   --primary-color: #38bdf8;
   --secondary-color: #3b82f6;
@@ -38,7 +31,6 @@ body.tema-gelap {
   --shadow-card: 0 15px 35px -10px rgba(0, 0, 0, 0.5);
 }
 
-/* 3. RESET & GLOBAL BASE */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -68,7 +60,6 @@ img {
   margin: 0 auto;
 }
 
-/* 4. HEADER (FLEXBOX LAYOUT) */
 header {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -118,7 +109,6 @@ header h1 {
   font-size: 0.85rem;
 }
 
-/* BADGE STATUS BARU DENGAN GLOWING DOT */
 .status-badge {
   display: inline-flex;
   align-items: center;
@@ -141,7 +131,6 @@ header h1 {
   box-shadow: 0 0 10px #22c55e;
 }
 
-/* 5. NAVIGASI STICKY BUBBLE */
 nav {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -178,7 +167,6 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* 6. KARTU SECTION */
 section {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -213,7 +201,6 @@ blockquote {
   color: var(--text-main);
 }
 
-/* 7. TABEL PENDIDIKAN */
 .table-responsive {
   overflow-x: auto;
 }
@@ -245,7 +232,6 @@ table td {
   font-size: 0.9rem;
 }
 
-/* 8. CSS GRID KEAHLIAN & KONTAK */
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -301,7 +287,6 @@ ul.info-list li {
   font-size: 0.92rem;
 }
 
-/* 9. FOOTER */
 footer {
   text-align: center;
   padding: 25px 0;
@@ -311,7 +296,6 @@ footer {
   margin-top: 25px;
 }
 
-/* 10. MEDIA QUERY UNTUK LAYAR LAPTOP / TABLET (≥768px) */
 @media (min-width: 768px) {
   body {
     padding: 40px 20px;
